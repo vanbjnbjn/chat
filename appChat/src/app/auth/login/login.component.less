@@ -1,15 +1,37 @@
-.login-bg
+.login-container
 {
-    background-color: rgba(var(--bs-primary-rgb),1);
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-
-    .authentication-page-content
-    {
-        height: calc(100% - 48px);
-        background-color: var(--bs-secondary-bg);
-        border-radius: 16px;
-        margin: 24px;
+    .login-form{
+        .login-from-content
+        {
+           height: 40em; 
+           border: 0.1em solid rgba(var(--bs-primary-rgb), 1);
+           border-radius: 1rem;
+           background-color: var(--bs-white);
+        }
     }
+    .mat-tab-label
+    {
+        flex-grow: 1;
+    }
+    .mat-tab-labels
+    {
+        &:last-child
+        {
+            background-color: red;
+            border-left: 1px solid #000000 !important;
+            content: "dasdsa";
+        }
+    }
+    .mat-tab-header
+    {
+        border: none;
+    }
+    // .mat-ink-bar
+    // {
+    //     background-color: #00000000 !important;
+    // }
+    // .mat-tab-label-active
+    // {
+    //     background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(78,172,109,0.8015581232492998) 65%);
+    // }
 }

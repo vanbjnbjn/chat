@@ -1,12 +1,31 @@
-<div class="login-bg">
-<div class="container-fluid p-0">
-    <div class="row g-0">
-        <div class="col-xl-3 col-lg-4"></div>
-        <div class="col-xl-9 col-lg-8">
-            <div class="authentication-page-content">
-                    fsfsafsadfsa
+<div class="login-container h-100">
+    <div class="login-form row h-100">
+        <div class="login-from-content col-xl-3 m-auto p-3">
+            <div class="title">
+                 <span><h3>Sign in</h3> to connect to your world</span>
             </div>
+            <mat-tab-group>
+                <mat-tab label="Account"> 
+                    <form>
+                        <div class="user-field">
+                            <span>Username</span>
+                            <input type="text"/>
+                        </div>
+                        <div class="password-field">
+                            <span>Password</span>
+                            <input type="password"/>
+                        </div>
+                    </form>
+                </mat-tab>
+                <mat-tab label="QR Code"> 
+                    <ngx-qrcode
+                        [elementType]="elementType"
+                        [errorCorrectionLevel]="correctionLevel"
+                        [value]="value"
+                        cssClass="bshadow">
+                    </ngx-qrcode>
+                     </mat-tab>
+            </mat-tab-group>
         </div>
     </div>
-</div>
 </div>
